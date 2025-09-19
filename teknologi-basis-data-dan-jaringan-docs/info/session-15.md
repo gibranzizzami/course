@@ -1,8 +1,9 @@
 ---
 date:  ""
 draft: false
-title: "Arsip Digital"
-weight: 4
+title: "Perpustakaan Digital"
+quota: 38
+weight: 15
 parted:
     name: ""
     goal: "Parted 1"

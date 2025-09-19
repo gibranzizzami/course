@@ -19,8 +19,6 @@ assign:
     desc: "Membuat konsep dan prinsip dasar perpustakaan digital."
     icon: ""
 metadata:
-    index: false
-    thumb: "cover.jpg"
-    author: []
+    author: ""
 description: "Memahami konsep dan prinsip dasar perpustakaan digital."
 ---

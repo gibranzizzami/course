@@ -6,21 +6,19 @@ weight: 1
 parted:
     name: ""
     goal: "Parted 1"
-    desc: "Memahami konsep dan prinsip dasar perpustakaan digital."
+    desc: "Memahami konsep, fungsi, jenis basis data."
     icon: ""
 tasker:
     name: ""
     goal: "Tasker 1"
-    desc: "Mencari konsep dan prinsip dasar perpustakaan digital."
+    desc: "Mencari konsep, fungsi, jenis basis data."
     icon: ""
 assign:
     name: ""
     goal: "Parted 1"
-    desc: "Membuat konsep dan prinsip dasar perpustakaan digital."
+    desc: "Membuat konsep, fungsi, jenis basis data."
     icon: ""
 metadata:
-    index: false
-    thumb: "cover.jpg"
-    author: []
-description: "Memahami konsep dan prinsip dasar perpustakaan digital."
+    author: ""
+description: "Memahami konsep, fungsi, jenis basis data."
 ---
