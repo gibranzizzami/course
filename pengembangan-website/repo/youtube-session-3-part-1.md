@@ -6,7 +6,7 @@ title: "Example - Format Youtube"
 terms: []
 weight : 5
 module:
-    parted: 3
+    parted: 1
     layout: ""
     strain: "material"
 format:
