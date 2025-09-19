@@ -2,7 +2,6 @@
 date:  ""
 draft: false
 title: "Perpustakaan Digital"
-quota: 38
 weight: 6
 parted:
     name: ""
