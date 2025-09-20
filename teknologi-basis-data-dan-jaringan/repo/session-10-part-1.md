@@ -1,8 +1,8 @@
 ---
 date:  ""
 draft: false
-title: "Example - Format Article"
-short: ""
+title: "Konsep JOIN & Relasi Tabel"
+short: "Konsep"
 thumb:
     image: "cover.jpg"
     anima: ""

@@ -1,8 +1,8 @@
 ---
 date:  ""
 draft: false
-title: "Example - Format Article"
-short: ""
+title: "ORDER BY dan Kombinasinya"
+short: "ORDER BY"
 thumb:
     image: "cover.jpg"
     anima: ""

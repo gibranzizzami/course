@@ -1,8 +1,8 @@
 ---
 date:  ""
 draft: false
-title: "Example - Format Article"
-short: ""
+title: "Konsep GROUP BY & Fungsi Agregasi"
+short: "Konsep dan Fungsi"
 thumb:
     image: "cover.jpg"
     anima: ""

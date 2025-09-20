@@ -1,8 +1,8 @@
 ---
 date:  ""
 draft: false
-title: "Example - Format Article"
-short: ""
+title: "Studi Kasus & Query Kompleks"
+short: "Studi Kasus"
 thumb:
     image: "cover.jpg"
     anima: ""

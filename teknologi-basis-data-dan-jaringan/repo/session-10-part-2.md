@@ -1,7 +1,7 @@
 ---
 date:  ""
 draft: false
-title: "Example - Format Article"
+title: "Variasi JOIN (LEFT, RIGHT, FULL)"
 short: ""
 thumb:
     image: "cover.jpg"
