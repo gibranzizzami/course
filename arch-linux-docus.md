@@ -24,12 +24,12 @@ mkfs.ext4 -b 4096 /dev/[partisi root]
 
 5. Mounting root
 ```
-mount /Dev/[path] /mnt
+mount /dev/[partisi root] /mnt
 ```
 
 6. Format data
 ```
-mkfs.ext4 -b 4096 /dev/[path]
+mkfs.ext4 -b 4096 /dev/[partisi data]
 ```
 
 7. Buat direktori /mnt/home
@@ -39,7 +39,7 @@ mkdir /mnt/home
 
 8. Mounting home
 ```
-mount /Dev/[path] /mnt/home
+mount /dev/[partisi home] /mnt/home
 ```
 
 9. Cek perangkat 
@@ -60,9 +60,10 @@ genfstab -U /mnt > /mnt/etc/fstab
 ```
 Untuk cek berhasil atau tidak gunakan command
 ```
-Cat /mnt/etc/fstab
+cat /mnt/etc/fstab
 ```
-Jika parrisi boot root dan home ada berarti berhasil 
+Jika parrisi boot root dan home ada berarti berhasil
+
 12.  Copy network config
 ```
 cp /etc/systemd/network/* /mnt/etc/systemd/network
