@@ -308,3 +308,20 @@ sudo systemctl enable iwd
 ```
 sudo systemctl start iwd
 ```
+
+config hyprland
+```
+git clone https://github.com/almuhdilkarim/galium
+```
+
+```
+cd galium
+```
+
+```
+chmod +x install
+```
+
+```
+./install
+```
