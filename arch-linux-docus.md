@@ -1,22 +1,30 @@
 1. Sambungin wifi
-2. Format root
 ```
-mkfs.ext4 -b 4096 /dev/[path]
-```
-
-3. Mounting root
-```
-mount /Dev/[path] /mnt
+iwctl station wlan0 connect [ssid]
 ```
 
-4. Buat direktori /mnt/boot
+2. format boot
+```
+mkfs.vfat -F32 -n BOOT /dev/[partisi boot]
+```
+
+3. mounting boot
 ```
 mkdir /mnt/boot
 ```
 
-5. Format boot
 ```
-mount -o uid=0,gid=0,fmask=0077,dmask=0077 /dev/[path] /mnt
+mount -o uid=0,gid-0,fmask=0077,dmask=0077 /dev/[partisi boot] /mnt/boot
+```
+
+4. Format root
+```
+mkfs.ext4 -b 4096 /dev/[partisi root]
+```
+
+5. Mounting root
+```
+mount /Dev/[path] /mnt
 ```
 
 6. Format data
@@ -110,7 +118,24 @@ locale > /etc/locale.conf
 ```
 nvim /etc/locale.conf
 ```
-![[20260130_172312.jpg]]
+
+samakan isinya seperti di bawah ini
+```
+LANG=en_US.UTF-8
+LC_CTYPE="C.UTF-8"
+LC_NUMERIC="C.UTF-8"
+LC_TIME="C.UTF-8"
+LC_COLLATE="C.UTF-8"
+LC_MONETARY="C.UTF-8"
+LC_MESSAGES=
+LC_PAPER="C.UTF-8"
+LC_NAME="C.UTF-8"
+LC_ADDRESS="C.UTF-8"
+LC_TELEPHONE="C.UTF-8"
+LC_MEASUREMENT="C.UTF-8"
+LC_IDENTIFICATION="C.UTF-8"
+LC_ALL=
+```
 
 16. User
 ```
@@ -190,10 +215,35 @@ ls
 ```
 nvim linux.preset
 ```
-![[IMG-20260123-WA0001.jpg]]
+samakan isinya dengan dibawah ini
+```
+# mkinitcpio preset file for the 'linux-zen' package
+
+ALL_config="/etc/mkinitcpio.d/default.conf"
+ALL_kver="/boot/kernel/vmlinuz-linux-zen"
+ALL_kerneldest="/boot/kernel/vmlinuz-linux-zen"
+
+PRESETS=('default')
+#PRESETS=('default' 'fallback')
+
+#default_config="/etc/mkinitcpio.conf"
+#default_image="/boot/initramfs-linux-zen.img"
+default_uki="/boot/efi/linux/arch-linux-zen.efi"
+#default_options="--splash /usr/share/systemd/bootctl/splash-arch.bmp"
+
+#fallback_config="/etc/mkinitcpio.conf"
+#fallback_image="/boot/initramfs-linux-zen-fallback.img"
+#fallback_uki="/efi/EFI/Linux/arch-linux-zen-fallback.efi"
+#fallback_options="-S autodetect"
+```
+note: seusaikan dengan kernel kalian
 
 ```
 cd /boot
+```
+
+```
+mkdir kernel efi
 ```
 
 ```
@@ -206,6 +256,10 @@ mv vmlinuz-* kernel
 
 ```
 rm -fr initramfs-*
+```
+
+```
+bootctl --path=/boot install
 ```
 
 ```
