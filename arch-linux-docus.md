@@ -196,7 +196,7 @@ ls
 Hapus mkinitcpio.conf.d jika ada
 
 ```
-rm -fr mkinitcpip.conf.d
+rm -fr mkinitcpio.conf.d
 ```
 
 Pindahkan
