@@ -84,7 +84,7 @@ arch-chroot /mnt
 
 13.  Install tampilan
 ```
-pacman -S hyprland hyprlock xdg-desktop -portal-hyprland hyprpolkitagent hypridle hyprshot gnome-keyring libsecret superfile perl-image-exiftool lite-xl libnewt uwsm waybar mako wofi brightnessctl cliphist wl-clipboard mpd mpc mpv yt-dlp kitty qt5-wayland qt6-wayland bluez blueman firefox-developer-edition pipewire pipewire-pulse pipewire-jack pipewire-alsa wireplumber pamixer ttf-jetbrains-mono-nerd ttf-droid ttf-roboto ttf-fira-sans ttf-opensans btop rocm-smi-lib
+pacman -S hyprland hyprlock xdg-desktop-portal-hyprland hyprpolkitagent hypridle hyprshot gnome-keyring libsecret superfile perl-image-exiftool lite-xl libnewt uwsm waybar mako wofi brightnessctl cliphist wl-clipboard mpd mpc mpv yt-dlp kitty qt5-wayland qt6-wayland bluez blueman firefox-developer-edition pipewire pipewire-pulse pipewire-jack pipewire-alsa wireplumber pamixer ttf-jetbrains-mono-nerd ttf-droid ttf-roboto ttf-fira-sans ttf-opensans btop rocm-smi-lib
 ```
 
 14. Buat hostname
