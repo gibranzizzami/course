@@ -14,7 +14,7 @@ mkdir /mnt/boot
 ```
 
 ```
-mount -o uid=0,gid-0,fmask=0077,dmask=0077 /dev/[partisi boot] /mnt/boot
+mount -o uid=0,gid=0,fmask=0077,dmask=0077 /dev/[partisi boot] /mnt/boot
 ```
 
 4. Format root
