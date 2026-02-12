@@ -74,7 +74,7 @@ mkdir /mnt/var/lib/iwd
 ```
 
 ```
-cp -r /var/lib/iwd /mnt/var/lib/iwd
+cp -r /var/lib/iwd/*.psk /mnt/var/lib/iwd
 ```
 
 12. Masuk ke root
